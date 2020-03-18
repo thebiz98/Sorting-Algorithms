@@ -7,18 +7,14 @@
 #include<stdlib.h>
 #include<math.h>
 
-int main()
+int main(int argc, char *argv[])
 {
 	int ele,l,u,i,num;
 	FILE *f;
-	char fname[100];
-	printf("Enter the name of the file: ");
-	scanf("%s",fname);
-	printf("Enter the number of terms to be generated :");
-	scanf("%d",&ele);
-	printf("Enter the range of the distribution: ");
-	scanf("%d %d",&l,&u);
-	f=fopen(fname,"w");
+	l=atoi(argv[argc-2]);
+	u=atoi(argv[argc-1]);
+	ele=atoi(argv[argc-3]);
+	f=fopen(argv[argc-4],"w");
 	fprintf(f,"%d ",ele);
 	if(f==NULL)
 	{

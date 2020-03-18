@@ -28,21 +28,15 @@ double gaussrand()
 	return Z;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
         int ele,i,m,sd;
 	double num;
         FILE *f;
-        char fname[100];
-        printf("Enter the name of the file: ");
-        scanf("%s",fname);
-        printf("Enter the number of terms to be generated :");
-        scanf("%d",&ele);
-	printf("Enter the mean: ");
-	scanf("%d",&m);
-	printf("Enter the standard deviation: ");
-	scanf("%d",&sd);
-        f=fopen(fname,"w");
+        ele=atoi(argv[argc-3]);
+	m=atoi(argv[argc-2]);
+	sd=atoi(argv[argc-1]);
+        f=fopen(argv[argc-4],"w");
         if(f==NULL)
         {
                 printf("File opening error.\n");
