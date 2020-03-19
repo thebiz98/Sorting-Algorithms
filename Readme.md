@@ -20,7 +20,7 @@ A description of the programs in this repository is as follows:
 
 prog1.c : This is a program to generate datasets of varying sizes containing randomly generated numbers belonging to uniform distribution. The output is written to a file, the filename is provided as a command line argument. The number of data elements and the range of the numbers are also provided as command line arguments.
 
-prog2.c : This is a program to generate datasets of varying sizes containing randomly generated numbers belonging to a normal distribution, whose median and standard deviation are provided as command line arguments. The desired size of the dataset is also provided as command line argument. The output is written to an output file, whose name is provided as command line arguments.
+prog2.c : This is a program to generate datasets of varying sizes containing randomly generated numbers belonging to a normal distribution, whose median and standard deviation are provided as command line arguments. The desired size of the dataset is also provided as command line argument. The output is written to an output file, whose name is provided as a command line argument.
 
 .
 .
