@@ -1,4 +1,4 @@
-The objctive of this assignment is to study the complexity of a select few algorithms and study the increase in complexity as the input size increases. 
+The objctive of this assignment is to study the complexity of a select few algorithms and study the increase in complexity as the input size increases.
 
 The input is a dataset containing randomly generated numbers. 
 There are two kinds of datasets, one of theem contains numbers generated from uniform distribution, the other contains data generated from normal distribution. 
