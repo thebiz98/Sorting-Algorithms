@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
 		printf("The number of comparisons is: %lld\n",count);
 		printf("The number of swaps is: %lld\n",swaps);
 		printf("The time taken for the sorting is: %lf\n",cpu_time_used);
-		fprintf(res,"Quick_Sort,%c,%lld,%lld,%lf,%lld,%lld,%lld,%lf,%lf,%lf,%lf,%lld,%lf\n",dist,x,n,n1,n2,n3,count,c1,c2,c3,c4,swaps,cpu_time_used);
+		fprintf(res,"Randomized_Quick_Sort,%c,%lld,%lld,%lf,%lld,%lld,%lld,%lf,%lf,%lf,%lf,%lld,%lf\n",dist,x,n,n1,n2,n3,count,c1,c2,c3,c4,swaps,cpu_time_used);
 	}
 	fprintf(res,"\n");
 	fclose(res);
