@@ -112,9 +112,7 @@ int main(int argc, char *argv[])
 	char out_file[len];
 	out_file[0]='\0';
 	strcat(out_file,argv[argc-1]);
-	strcat(out_file,"merge");
-	strcat(out_file,"check");
-	out_file[len-1]='0';
+	strcat(out_file,"mergecheck0");
 	lf *a;
 	fscanf(f,"%lld",&n);
 	a=(lf *)malloc(n*sizeof(lf));

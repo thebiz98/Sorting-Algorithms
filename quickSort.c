@@ -39,7 +39,7 @@ void shuffle(lf *a, lint n)
 
 int partition(lf *arr, lint l, lint h)
 {
-	lf pivot=arr[h],t;
+	lf pivot=arr[h];
 	lint i=l-1;
 	lint j;
 	for(j=l;j<h;j++)
@@ -49,15 +49,11 @@ int partition(lf *arr, lint l, lint h)
 		{
 			swaps++;
 			i++;
-			t=arr[j];
-			arr[j]=arr[i];
-			arr[i]=t;
+			swap(&arr[i],&arr[j]);
 		}
 	}
 	swaps++;
-	t=arr[i+1];
-	arr[i+1]=arr[h];
-	arr[h]=t;
+	swap(&arr[i+1],&arr[h]);
 	return i+1;
 }
 
@@ -83,8 +79,7 @@ int main(int argc, char *argv[])
 	char out_file[len];
 	out_file[0]='\0';
 	strcat(out_file,argv[argc-1]);
-	strcat(out_file,"quickcheck");
-	out_file[len-1]='0';
+	strcat(out_file,"quickcheck0");
 	lf *a;
 	fscanf(f,"%lld",&n);
 	a=(lf *)malloc(n*sizeof(lf));
