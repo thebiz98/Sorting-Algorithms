@@ -37,7 +37,7 @@ void shuffle(lf *a, lint n)
 	}
 }
 
-int partition(lf *arr, lint l, lint h)
+lint partition(lf *arr, lint l, lint h)
 {
 	lf pivot=arr[h];
 	lint i=l-1;
