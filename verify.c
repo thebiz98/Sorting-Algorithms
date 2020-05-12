@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
 			if(prev>tmp)
 			{
 				printf("The faulty pair is: %lf and %lf\n",prev,tmp);
-				printf("Dataset not sorted\n");
+				printf("Dataset '%s' not sorted\n",argv[argc-1]);
 				fclose(f);
 				return 0;
 			}
 			prev=tmp;
 		}
 	}
-	printf("Dataset sorting verified.\n");
+	printf("Dataset '%s' sorting verified.\n",argv[argc-1]);
 	fclose(f);
 	return 0;
 }
