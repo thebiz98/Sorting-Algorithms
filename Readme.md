@@ -24,7 +24,6 @@ prog1.c : This is a program to generate datasets of varying sizes containing ran
 execution format: 
 
 $ gcc -o gen_uni prog1.c
-
 $ ./gen_uni <outputfilename> <number_of_terms_required> <start_value> <end_value>
 
 
@@ -33,7 +32,6 @@ prog2.c : This is a program to generate datasets of varying sizes containing ran
 execution format:
 
 $ gcc -o gen_norm prog2.c -lm
-
 $ ./gen_norm <outputfilename> <number_of_terms_required> <mean> <standard_deviation>
 
 
@@ -47,7 +45,6 @@ mergeSort.c : This is a program to implement the merge sort algorithm. The progr
 execution format:
 
 $ gcc -o ms mergeSort.c -lm
-
 $ ./ms <file_name>
 
 
@@ -56,7 +53,6 @@ quickSort.c : This is a program to implement the quick sort algorithm that uses 
 execution format:
 
 $ gcc -o qs quickSort.c -lm
-
 $ ./qs <file_name>
 
 
@@ -65,7 +61,6 @@ rquickSort.c : This program implements the quick sort algorithm by choosing the 
 execution format:
 
 $ gcc -o rqs rquickSort.c -lm
-
 $ ./rqs <file_name>
 
 
@@ -73,7 +68,6 @@ momqs.c : This program uses order statistics to choose the median of medians of 
 
 execution format:
 $ gcc -o mqs momquickSort.c -lm
-
 $ ./mqs <file_name>
 
 
@@ -84,7 +78,6 @@ Note : The bucket sort function works with normalised data, as the allotment of 
 execution format:
 
 $ gcc -o bs bucketSort.c -lm
-
 $ ./bs <file_name>
 
 
@@ -95,7 +88,6 @@ norm0to1.c : This program takes a dataset file as input and outputs its normalis
 execution format:
 
 $ gcc -o normalise norm0to1.c
-
 $ ./normalise <file_name>
 
 
@@ -104,7 +96,6 @@ verify.c : This program is used to test if a dataset is sorted or not. If the da
 execution format:
 
 $ gcc -o v verify.c
-
 $ ./v <file_name>
 
 
@@ -115,7 +106,6 @@ assignment.sh : This is a bash script containing the commands to generate 12 dat
 execution format:
 
 $ chmod +x assignment.sh   ---> this command will give the bash script the execution permission
-
 $ ./assignment.sh
 
 
