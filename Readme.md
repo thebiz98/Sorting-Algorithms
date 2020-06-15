@@ -73,14 +73,14 @@ momqs.c : This program uses order statistics to choose the median of medians of 
 
 execution format:
 
-$ gcc -o mqs momquickSort.c -lm
+$ gcc -o mqs momqs.c -lm
 
 $ ./mqs <file_name>
 
 
 bucketSort.c : This program uses the bucket sort algorithm to sort the input dataset. This algorithm ssorts the elements with linear complexity, by forming 'buckets' and putting the elements in the appropriate buckets, sorting the buckets and then reading the elements into the array in a serial manner to obtain the sorted dataset. The shuffling of the dataset makes no sense for this algorithm as the elements will end up in the same bucket, so shuffling has been avoided in this program. Therefore, this program outputs into two files for an input dataset: 1.<inputfilename_sortname_check> : The file with the output sorted dataset. 2.'results.csv' : The results of the sorting are stored here. In addition to number of comparisons and other general data, it also outputs the numbeer of buckets formed and the size of the largest bucket.
 
-Note : The bucket sort function works with normalised data, as the allotment of bucket uses this normalisation as a feature. Therefore, the dataset for this program is supplied by the 'norm0to1.c' program as described below. It is advised to run the dataset to be sorted through the 'norm0to1.c' program and then give the output obtained from that as the input for this program.
+Note : The bucket sort function works with normalised data, as the allotment of bucket uses this normalisation as a feature. Therefore, the dataset for this program is supplied by the 'norm0to1.c' program as described below. It is advised to run the dataset to be sorted through the 'norm0to1.c' program and then give the output obtained from that program as the input for this program.
 
 execution format:
 
