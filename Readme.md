@@ -1,6 +1,6 @@
 The objctive of this assignment is to study the complexity of a select few sorting algorithms and study the increase in complexity as the input size increases. 
 
-(The detalied report of the findings is in the presentation pdf titled:)
+(The detalied report of the findings is in the presentation pdf titled: 'Analysis of Sorting Algorithms.pdf')
 
 The input to each program is a dataset containing randomly generated numbers.
 There are two kinds of datasets, one of theem contains numbers generated from uniform distribution, the other contains data generated from normal distribution. 
